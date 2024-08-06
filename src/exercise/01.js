@@ -8,7 +8,7 @@ function countReducer(count, setCount) {
 }
 
 function Counter({initialCount = 0, step = 1}) {
-  const [count, setCount] = React.useReducer(countReducer, initialCount)
+  const [count, setCount] = React.useReducer(countReducer,initialCount)
 
 
   const increment = () => setCount(count + step)
